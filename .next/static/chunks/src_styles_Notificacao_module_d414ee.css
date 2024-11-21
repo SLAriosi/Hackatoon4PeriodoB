@@ -1,0 +1,39 @@
+/* [project]/src/styles/Notificacao.module.css [client] (css) */
+.Notificacao-module__lbbMHG__notificationContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.Notificacao-module__lbbMHG__notificationTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.Notificacao-module__lbbMHG__notificationList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Notificacao-module__lbbMHG__notificationItem {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.Notificacao-module__lbbMHG__notificationItem.Notificacao-module__lbbMHG__unread {
+  background-color: #ffddc1;
+}
+
+.Notificacao-module__lbbMHG__notificationItem strong {
+  font-size: 1.1rem;
+}
+
+.Notificacao-module__lbbMHG__noNotifications {
+  font-style: italic;
+  color: #999;
+}
+
+
+/*# sourceMappingURL=src_styles_Notificacao_module_d414ee.css.map*/

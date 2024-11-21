@@ -1,0 +1,239 @@
+/* [project]/src/styles/Dashboard.module.css [client] (css) */
+.Dashboard-module__5cuSHa__dashboardContainer {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.Dashboard-module__5cuSHa__dashboardContent {
+  flex: 1;
+  padding: 15px;
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.Dashboard-module__5cuSHa__dashboardTitle {
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Dashboard-module__5cuSHa__filtersAndReservations {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Dashboard-module__5cuSHa__filtersContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Dashboard-module__5cuSHa__filtersContainer .Dashboard-module__5cuSHa__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.Dashboard-module__5cuSHa__filters input, .Dashboard-module__5cuSHa__filters select {
+  padding: 8px;
+  font-size: .9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 180px;
+}
+
+.Dashboard-module__5cuSHa__filters input[type="date"] {
+  width: 150px;
+}
+
+.Dashboard-module__5cuSHa__filters select {
+  width: 150px;
+}
+
+.Dashboard-module__5cuSHa__downloadButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Dashboard-module__5cuSHa__downloadButtons button {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color .3s;
+  font-size: .9rem;
+  min-width: 120px;
+}
+
+.Dashboard-module__5cuSHa__downloadButtons button:hover {
+  background-color: #444;
+}
+
+.Dashboard-module__5cuSHa__reservationsTableContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px #0000001a;
+  padding: 15px;
+}
+
+.Dashboard-module__5cuSHa__reservationsTableContainer h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable th, .Dashboard-module__5cuSHa__reservationsTable td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: .9rem;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable button {
+  padding: 6px 12px;
+  font-size: .9rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color .3s;
+  background-color: #000;
+  color: #fff;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.Dashboard-module__5cuSHa__reservationsTable button:not(:disabled):hover {
+  background-color: #444;
+}
+
+.Dashboard-module__5cuSHa__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.Dashboard-module__5cuSHa__pagination button {
+  padding: 6px 12px;
+  font-size: .9rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.Dashboard-module__5cuSHa__pagination button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.Dashboard-module__5cuSHa__pagination .Dashboard-module__5cuSHa__active {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+}
+
+.Dashboard-module__5cuSHa__chartsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 15px;
+}
+
+.Dashboard-module__5cuSHa__chartCanvas {
+  width: 100%;
+  max-width: 350px;
+  height: 200px;
+}
+
+@media (width <= 1200px) {
+  .Dashboard-module__5cuSHa__dashboardContainer {
+    flex-direction: column;
+  }
+
+  .Dashboard-module__5cuSHa__dashboardContent {
+    padding: 15px;
+  }
+
+  .Dashboard-module__5cuSHa__filtersContainer .Dashboard-module__5cuSHa__filters {
+    justify-content: space-between;
+  }
+}
+
+@media (width <= 768px) {
+  .Dashboard-module__5cuSHa__dashboardContent {
+    margin-left: 0;
+  }
+
+  .Dashboard-module__5cuSHa__filters input, .Dashboard-module__5cuSHa__filters select {
+    width: 100%;
+  }
+
+  .Dashboard-module__5cuSHa__filtersContainer {
+    flex-direction: column;
+  }
+
+  .Dashboard-module__5cuSHa__downloadButtons button {
+    width: 100%;
+  }
+
+  .Dashboard-module__5cuSHa__pagination button {
+    padding: 6px 12px;
+  }
+
+  .Dashboard-module__5cuSHa__chartsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Dashboard-module__5cuSHa__chartCanvas {
+    max-width: 100%;
+    height: 180px;
+  }
+}
+
+@media (width <= 480px) {
+  .Dashboard-module__5cuSHa__dashboardTitle {
+    font-size: 1.8rem;
+  }
+
+  .Dashboard-module__5cuSHa__reservationsTable th, .Dashboard-module__5cuSHa__reservationsTable td {
+    padding: 6px;
+  }
+
+  .Dashboard-module__5cuSHa__pagination button {
+    padding: 6px 10px;
+  }
+}
+
+/*# sourceMappingURL=src_styles_Dashboard_module_735113.css.map*/

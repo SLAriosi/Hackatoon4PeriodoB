@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Diego/sistema-reservas/src/styles/global.css"],"sourcesContent":["/* Reset básico */\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml, body {\r\n  font-family: 'Roboto', sans-serif;\r\n  background-color: #f9f9f9;\r\n  color: #333;\r\n  line-height: 1.6;\r\n}\r\n\r\na {\r\n  text-decoration: none;\r\n  color: inherit;\r\n}\r\n\r\nul, ol {\r\n  list-style: none;\r\n}\r\n\r\nbutton {\r\n  cursor: pointer;\r\n}\r\n\r\n/* Variáveis globais */\r\n:root {\r\n  --primary-color: #4CAF50;\r\n  --secondary-color: #FF9800;\r\n  --background-color: #ffffff;\r\n  --text-color: #333333;\r\n  --border-color: #ddd;\r\n}\r\n"],"names":[],"mappings":"AACA,2CAMA,4FAOA,qCAKA,sBAIA,sBAKA"}},
+    {"offset": {"line": 1, "column": 334}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

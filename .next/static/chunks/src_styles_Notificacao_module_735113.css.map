@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/styles/Notificacao.module.css"],"sourcesContent":[".notificationContainer {\r\n    padding: 20px;\r\n    max-width: 800px;\r\n    margin: 0 auto;\r\n  }\r\n  \r\n  .notificationTitle {\r\n    font-size: 2rem;\r\n    margin-bottom: 20px;\r\n  }\r\n  \r\n  .notificationList {\r\n    list-style-type: none;\r\n    padding: 0;\r\n  }\r\n  \r\n  .notificationItem {\r\n    padding: 10px;\r\n    margin-bottom: 10px;\r\n    background-color: #f1f1f1;\r\n    border-radius: 5px;\r\n  }\r\n  \r\n  .notificationItem.unread {\r\n    background-color: #ffddc1; /* Cor para notificações não lidas */\r\n  }\r\n  \r\n  .notificationItem strong {\r\n    font-size: 1.1rem;\r\n  }\r\n  \r\n  .noNotifications {\r\n    font-style: italic;\r\n    color: #999;\r\n  }\r\n  "],"names":[],"mappings":"AAAA;;;;;;AAME;;;;;AAKA;;;;;AAKA;;;;;;;AAOA;;;;AAIA;;;;AAIA"}},
+    {"offset": {"line": 36, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

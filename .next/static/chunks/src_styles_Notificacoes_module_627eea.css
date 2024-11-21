@@ -1,0 +1,44 @@
+/* [project]/src/styles/Notificacoes.module.css [client] (css) */
+.Notificacoes-module__cXOWFG__container {
+  padding: 20px;
+}
+
+.Notificacoes-module__cXOWFG__notificationList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Notificacoes-module__cXOWFG__notificationList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.Notificacoes-module__cXOWFG__notificationList li.Notificacoes-module__cXOWFG__read {
+  background-color: #e0e0e0;
+}
+
+.Notificacoes-module__cXOWFG__actions button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.Notificacoes-module__cXOWFG__markAsRead {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.Notificacoes-module__cXOWFG__delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+
+/*# sourceMappingURL=src_styles_Notificacoes_module_627eea.css.map*/

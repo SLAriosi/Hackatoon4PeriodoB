@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/styles/Perfil.css"],"sourcesContent":["/* Layout Geral */\r\n.perfil-page {\r\n  display: flex;\r\n  min-height: 100vh;\r\n  background-color: #f9f9f9;\r\n}\r\n\r\n.perfil-content {\r\n  flex: 1;\r\n  padding: 20px;\r\n  overflow-y: auto;\r\n}\r\n\r\n.perfil-content h1 {\r\n  font-size: 2rem;\r\n  margin-bottom: 20px;\r\n  color: #333;\r\n}\r\n\r\n/* Formulário */\r\n.perfil-form {\r\n  background: #ffffff;\r\n  padding: 20px;\r\n  border-radius: 8px;\r\n  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);\r\n  max-width: 500px;\r\n  margin: 0 auto;\r\n}\r\n\r\n.form-group {\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.form-group label {\r\n  display: block;\r\n  font-weight: bold;\r\n  margin-bottom: 5px;\r\n  color: #555;\r\n}\r\n\r\n.form-group input {\r\n  width: 100%;\r\n  padding: 10px;\r\n  border: 1px solid #ccc;\r\n  border-radius: 4px;\r\n  font-size: 1rem;\r\n}\r\n\r\n/* Botão */\r\n.btn-atualizar {\r\n  width: 100%;\r\n  padding: 10px 20px;\r\n  background-color: #000;\r\n  color: #fff;\r\n  border: none;\r\n  border-radius: 4px;\r\n  font-size: 1rem;\r\n  cursor: pointer;\r\n  transition: background-color 0.3s;\r\n}\r\n\r\n.btn-atualizar:hover {\r\n  background-color: #555;\r\n}\r\n"],"names":[],"mappings":"AACA,oEAMA,oDAMA,gEAOA,yHASA,+BAIA,6EAOA,iGASA,yKAYA"}},
+    {"offset": {"line": 1, "column": 722}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

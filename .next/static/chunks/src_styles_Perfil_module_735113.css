@@ -1,0 +1,168 @@
+/* [project]/src/styles/Perfil.module.css [client] (css) */
+.Perfil-module__mu2SBG__container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+.Perfil-module__mu2SBG__sidebar {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 4px 0 10px #0000001a;
+}
+
+.Perfil-module__mu2SBG__content {
+  flex: 1;
+  margin-left: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #0000001a;
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.Perfil-module__mu2SBG__card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #0000001a;
+}
+
+.Perfil-module__mu2SBG__header {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.Perfil-module__mu2SBG__icon {
+  margin-right: 8px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.Perfil-module__mu2SBG__formGroup {
+  margin-bottom: 20px;
+}
+
+.Perfil-module__mu2SBG__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.Perfil-module__mu2SBG__inputContainer {
+  position: relative;
+}
+
+.Perfil-module__mu2SBG__input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  color: var(--primary-color);
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color .3s ease-in-out;
+}
+
+.Perfil-module__mu2SBG__input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.Perfil-module__mu2SBG__iconInput {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 16px;
+}
+
+.Perfil-module__mu2SBG__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.Perfil-module__mu2SBG__button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 48%;
+  transition: background-color .3s ease-in-out;
+}
+
+.Perfil-module__mu2SBG__button:hover {
+  background-color: #333;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.Perfil-module__mu2SBG__loading {
+  background-color: #ddd;
+}
+
+.Perfil-module__mu2SBG__error {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.Perfil-module__mu2SBG__editButton {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color .3s ease-in-out;
+}
+
+.Perfil-module__mu2SBG__editButton:hover {
+  background-color: #218838;
+}
+
+@media (width <= 768px) {
+  .Perfil-module__mu2SBG__content {
+    margin-left: 0;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Perfil-module__mu2SBG__header {
+    font-size: 16px;
+  }
+
+  .Perfil-module__mu2SBG__button {
+    width: 100%;
+  }
+
+  .Perfil-module__mu2SBG__actions {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=src_styles_Perfil_module_735113.css.map*/
