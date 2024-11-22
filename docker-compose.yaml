@@ -83,6 +83,17 @@ services:
     networks:
       - laravel_enviroment
 
+  composer_installer:
+    image: composer:latest
+    volumes:
+      - ./src:/var/www/html
+    working_dir: /var/www/html
+    command: [ "composer", "install", "--ignore-platform-reqs" ]
+    depends_on:
+      - php
+    networks:
+      - laravel_enviroment
+
   artisan:
     build:
       context: .
@@ -93,6 +104,7 @@ services:
     #- mysql
     networks:
       - laravel_enviroment
+
   scheduler:
     build:
       context: .
