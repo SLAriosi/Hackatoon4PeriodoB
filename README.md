@@ -8,3 +8,4 @@ https://medium.com/@murilolivorato/setting-up-a-laravel-development-environment-
 
 ## Comandos para criar models juntamente migrations dentro do composer
 - docker-compose run --rm artisan make:model Ambiente --migration
+- docker-compose run --rm artisan migrate
