@@ -6,12 +6,12 @@ use App\Http\Controllers\AmbienteController;
 
 // ...existing code...
 
-Route::prefix('ambientes')->group(function () {
-    Route::get('/', [AmbienteController::class, 'index']); // Listar todos os ambientes
-    Route::post('/', [AmbienteController::class, 'store']); // Criar um novo ambiente
-    Route::get('/{id}', [AmbienteController::class, 'show']); // Mostrar um ambiente específico
-    Route::put('/{id}', [AmbienteController::class, 'update']); // Atualizar um ambiente específico
-    Route::delete('/{id}', [AmbienteController::class, 'destroy']); // Deletar um ambiente específico
+Route::middleware(['cors'])->group(function () {
+    Route::get('/ambientes', [AmbienteController::class, 'index']); // Listar todos os ambientes
+    Route::post('/ambientes', [AmbienteController::class, 'store']); // Criar um novo ambiente
+    Route::get('/ambientes/{id}', [AmbienteController::class, 'show']); // Mostrar um ambiente específico
+    Route::put('/ambientes/{id}', [AmbienteController::class, 'update']); // Atualizar um ambiente específico
+    Route::delete('/ambientes/{id}', [AmbienteController::class, 'destroy']); // Deletar um ambiente específico
 });
 
 Route::post('/login', [AuthController::class, 'login']);
