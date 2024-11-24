@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->boolean('is_active')->default(true);
-            $table->enum('status', ['RESERVADO', 'LIVRE']);
             $table->text('materiais')->nullable();
+            $table->text('icon')->nullable();
             $table->bigInteger('capacidade')->nullable();
             $table->timestamps();
         });

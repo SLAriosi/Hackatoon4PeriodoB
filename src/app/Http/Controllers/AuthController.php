@@ -14,7 +14,7 @@ class AuthController extends Controller
 
       if (Hash::check($request->password, $user->password)) {
          $token = $user->createToken('authToken')->plainTextToken;
-         return response()->json(['token' => $token, 'user_id' => $user->id], 200);
+         return response()->json(['token' => $token, 'user_id' => $user->id, 'role' => $user->role], 200);
       }
 
       return response()->json(['error' => 'Unauthorized'], 401);

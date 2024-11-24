@@ -10,6 +10,5 @@ class Ambiente extends Model
     use HasFactory;
 
     protected $table = 'ambientes';
-    protected $fillable = ['nome', 'descricao', 'capacidade', 'localizacao', 'tipo', 'status'];
-
+    protected $fillable = ['name', 'description', 'is_active', 'materiais', 'capacidade', 'icon'];
 }
