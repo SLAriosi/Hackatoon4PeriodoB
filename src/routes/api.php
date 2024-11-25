@@ -28,6 +28,7 @@ Route::get('/ambientes_reservas/{id}', [AmbientesReservaController::class, 'show
 Route::post('/ambientes_reservas', [AmbientesReservaController::class, 'store']);
 Route::put('/ambientes_reservas/{id}', [AmbientesReservaController::class, 'update']);
 Route::delete('/ambientes_reservas/{id}', [AmbientesReservaController::class, 'destroy']);
+Route::get('/ambientes_reservas/usuario/{usuario_id}', [AmbientesReservaController::class, 'getReservasByUser']);
 
 Route::post('/login', [AuthController::class, 'login']);
 
