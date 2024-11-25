@@ -42,6 +42,14 @@ class AmbienteSeeder extends Seeder
                 'capacidade' => 50,
                 'icon' => '🖊️'
             ],
+            [
+                'name' => 'AlphaLab',
+                'description' => 'Sala para incubar novas idéias e projetos, para a apresentação dessas novas idéias.',
+                'is_active' => true,
+                'materiais' => '1 televisão, 1 computador, 1 mesa de reunião, 10 cadeiras',
+                'capacidade' => 20,
+                'icon' => '🎥'
+            ],
             // Adicione mais ambientes aqui
         ];
 

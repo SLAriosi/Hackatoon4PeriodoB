@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AmbienteController;
 use App\Http\Controllers\AmbientesReservaController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\NotificacaoController;
+use App\Http\Controllers\ReservaHistoricoController;
 
 // ...existing code...
 
@@ -28,3 +30,18 @@ Route::put('/ambientes_reservas/{id}', [AmbientesReservaController::class, 'upda
 Route::delete('/ambientes_reservas/{id}', [AmbientesReservaController::class, 'destroy']);
 
 Route::post('/login', [AuthController::class, 'login']);
+
+// Rotas CRUD para notificacoes
+Route::get('/notificacoes', [NotificacaoController::class, 'index']);
+Route::get('/notificacoes/{id}', [NotificacaoController::class, 'show']);
+Route::post('/notificacoes', [NotificacaoController::class, 'store']);
+Route::put('/notificacoes/{id}', [NotificacaoController::class, 'update']);
+Route::delete('/notificacoes/{id}', [NotificacaoController::class, 'destroy']);
+Route::get('/notificacoes/usuario/{usuario_id}', [NotificacaoController::class, 'getByUsuario']);
+Route::get('/notificacoes/usuario/{usuario_id}/nao-lidas', [NotificacaoController::class, 'getNaoLidasByUsuario']);
+
+Route::get('/reservas_historico', [ReservaHistoricoController::class, 'index']);
+Route::get('/reservas_historico/{id}', [ReservaHistoricoController::class, 'show']);
+Route::post('/reservas_historico', [ReservaHistoricoController::class, 'store']);
+Route::put('/reservas_historico/{id}', [ReservaHistoricoController::class, 'update']);
+Route::delete('/reservas_historico/{id}', [ReservaHistoricoController::class, 'destroy']);
