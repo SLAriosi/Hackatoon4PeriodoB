@@ -97,4 +97,12 @@ class AmbientesReservaController extends Controller
         $reserva->delete();
         return response()->json(null, 204);
     }
+
+    public function getReservasByUser($usuario_id)
+    {
+        $reservas = AmbientesReserva::where('user_id', $usuario_id)
+            ->get();
+
+        return response()->json($reservas);
+    }
 }
