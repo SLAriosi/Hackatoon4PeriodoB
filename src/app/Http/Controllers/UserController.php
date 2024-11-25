@@ -35,7 +35,7 @@ class UserController extends Controller
       $user = User::create([
          'name' => $request->name,
          'email' => $request->email,
-         'role' => $request->role,  
+         'role' => $request->role,
          'course' => $request->course,  
          'password' => Hash::make($request->password),
       ]);
@@ -47,37 +47,41 @@ class UserController extends Controller
    {
       $user = User::find($id);
       if (!$user) {
-         return response()->json(['error' => 'User not found'], 404);
+          return response()->json(['error' => 'User not found'], 404);
       }
-
-      $request->validate([
-         'name' => 'sometimes|required|string|max:255',
-         'email' => 'sometimes|required|string|email|max:255|unique:users,email,' . $id,
-         'password' => 'sometimes|required|string|min:8|confirmed',
-         'role' => 'sometimes|required|in:ESTUDANTE,PROFESSOR,ADMINISTRADOR',
-         'course' => 'sometimes|required|in:DIREITO,SISTEMAS,PSICOLOGIA,PEDAGOGIA',
-      ]);
-
+  
+      try {
+          $request->validate([
+              'name' => 'sometimes|required|string|max:255',
+              'email' => 'sometimes|required|string|email|max:255|unique:users,email,' . $id,
+              'password' => 'sometimes|required|string|min:8|confirmed',
+              'role' => 'sometimes|required|in:ESTUDANTE,PROFESSOR,ADMINISTRADOR',
+              'course' => 'sometimes|required|in:DIREITO,SISTEMAS,PSICOLOGIA,PEDAGOGIA',
+          ]);
+      } catch (\Illuminate\Validation\ValidationException $e) {
+          return response()->json(['error' => 'Validation error', 'messages' => $e->errors()], 404);
+      }
+  
       if ($request->has('name')) {
-         $user->name = $request->name;
+          $user->name = $request->name;
       }
       if ($request->has('email')) {
-         $user->email = $request->email;
+          $user->email = $request->email;
       }
       if ($request->has('role')) {
-         $user->role = $request->role;
+          $user->role = $request->role;
       }
       if ($request->has('course')) {
-         $user->course = $request->course;
+          $user->course = $request->course;
       }
       if ($request->has('password')) {
-         $user->password = Hash::make($request->password);
+          $user->password = Hash::make($request->password);
       }
-
+  
       $user->save();
-
+  
       return response()->json($user);
-   }
+  }
 
    public function destroy($id)
    {

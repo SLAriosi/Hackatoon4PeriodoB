@@ -15,5 +15,7 @@ class DatabaseSeeder extends Seeder
         $this->call(UserSeeder::class);
         $this->call(AmbienteSeeder::class);
         $this->call(AmbientesReservasSeeder::class);
+        $this->call(NotificacaoSeeder::class);                   
+        $this->call(ReservaHistoricoSeeder::class);                   
     }
 }

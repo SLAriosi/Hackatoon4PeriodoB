@@ -20,7 +20,7 @@ class AmbientesReserva extends Model
 
     public function ambiente()
     {
-        return $this->belongsTo(Ambiente::class);
+        return $this->belongsTo(Ambiente::class, 'ambiente_id');
     }
 
     public function user()
